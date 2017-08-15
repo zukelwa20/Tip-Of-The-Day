@@ -2,7 +2,7 @@
   <nav class="main-nav" id="menu">
     <ol>
       {% assign currentpage = page.url %}
-      {% for post in site.posts reversed %}
+      {% for post in site.posts %}
         {% unless post.url contains ".css" %}
           <li>
             <a href="{{ post.url }}" {% if currentpage == post.url %}class = "active"{% endif %}>{{ post.title }}</a>
