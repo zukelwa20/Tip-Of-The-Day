@@ -44,6 +44,4 @@ filterForDay("Monday");
 
 Note that async functions returns a `Promise`. You use `await` operator to wait for a Promise to complete.
 
-Read more about async/await [here](https://certsimple.com/blog/javascript-equals-async-await), [here](http://rossboucher.com/await/#/) or [here](https://pouchdb.com/2015/03/05/taming-the-async-beast-with-es7.html)
-
-You can even watch this [video](http://tagtree.io/es7-async-await).
+Read more about async/await [here](https://certsimple.com/blog/javascript-equals-async-await), [here](http://rossboucher.com/await/#/) or [here](https://pouchdb.com/2015/03/05/taming-the-async-beast-with-es7.html).
