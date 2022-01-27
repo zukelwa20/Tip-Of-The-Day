@@ -16,5 +16,7 @@ Create the variable of your compiled template.
 Inject data into the template. 
 Use the keys to display. 
 Remember to use the correct keys, that means use the same keys you have used to set data into the compiled template variable. 
-Make sure inside of your template you do not have a code that is commented out or you have the correct syntax. 
+Make sure inside of your template you do not have a code that is commented out or you have the correct syntax.
+
+to continue...
 ```
