@@ -4,10 +4,17 @@ layout: default
 
 # This is a new page
 
-Makho want to know how it works...
+Handlebars How to use handlebars...
 
 ```
-let a = 7;
-if (a > 6) {
-} else {
+Load the CDN(content delivery network)
+
+Create a template inside the header using script tag.
+Reference the template in js(dom logic).
+Get html text using .innerHTHL.
+Create the variable of your compiled template.
+Inject data into the template. 
+Use the keys to display. 
+Remember to use the correct keys, that means use the same keys you have used to set data into the compiled template variable. 
+Make sure inside of your template you do not have a code that is commented out or you have the correct syntax. 
 ```
