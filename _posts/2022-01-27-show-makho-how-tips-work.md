@@ -4,7 +4,7 @@ layout: default
 
 # This is a new page
 
-Handlebars How to use handlebars...
+How to use handlebars...
 
 ```
 Load the CDN(content delivery network)
