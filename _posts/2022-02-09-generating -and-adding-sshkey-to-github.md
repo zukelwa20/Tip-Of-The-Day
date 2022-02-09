@@ -2,7 +2,7 @@
 layout: default
 ---
 
-## Generating and adding sshkey to github
+### Generating and adding sshkey to github
 
 ##
 
