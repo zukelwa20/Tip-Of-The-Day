@@ -22,9 +22,9 @@ Create a tamplate script in your html, the template can also be created in separ
 <script type="text/x-handlebars" class="name-teplate">
    <div>
       My name is {{name}}. I'm a coder  at {{occupation}}.
-   </div>
-   </script>
-   
+   </div> 
+</script>
+
 ```
 
 ```
