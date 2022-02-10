@@ -38,5 +38,3 @@ compiledTemp({
 ``` 
 use .innerHTML to send the data to html. 
 ``` element.innerHTML = <YOUR template with data> ``` 
-
-```   
