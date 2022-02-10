@@ -4,8 +4,6 @@ layout: default
 
 ### How to use handlebars...
 
-Handlebars template make it easy to read and display data. 
-
 Handlerbars is templating engine that dynamically generates your HTML page. It’s an extension of Mustache with a few additional features. Mustache is fully logic-less but Handlebars adds minimal logic thanks to the use of some helpers (such as if, with, unless, each and more) that we’ll discuss further in this article. As a matter of fact, we can say that Handlebars is a superset of Mustache.
 
 
