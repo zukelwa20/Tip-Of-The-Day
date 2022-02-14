@@ -14,25 +14,38 @@ Load the CDN(content delivery network)
 
 ```
 <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.js" integrity="sha512-c7SfJeKRl8g7wgL+zMGX78faYVGp+NZVQ587mRLrqeLySX/qHCQOKw/iZ5Pp64DaPjvedixWC/Fe73upnhBaRA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
 ```
-Create a tamplate script in your html, the template can also be created in separate file, variables are accessed within the double curly braces. 
-
-``` type="text/x-handebars" ``` See below 
-
-```<script type="text/x-handlebars" class="name-teplate">
+Create a tamplate script in your html, the template can also be created in separate file or same file. The template is the combination of HTML ``` type="text/x-handebars :"``` and handlebars expression ```{{your variable here}}``` variables are written in double curly braces e.g({{}}) and know as expressions. 
+```
+<script type="text/x-handlebars" class="name-teplate">
    <div>
       My name is {{name}}. I'm a coder  at {{occupation}}.
-   </div>
-   </script>
+   </div> 
+</script>
 ```
 
+The next step is to write the necessary JavaScript, This will  contain references to the tamplate along the context object which is the source of the data being passed to the template. The data passed can be either a js literal object or a jQuery object. 
+ 
+ ```const element = document.querySelect('<classname>'); ```
+
+ Next is to pass the HTML to the Handlebars.compile() function. Then, the you pass the data context to the template. And finally, you add the compiled HTML to the DOM. Here is a shot of these steps written out in JavaScript:
+
+ ``` var compiledTemp = Handlerbars.compile(element.innerHTML); ```
+
+Now inject data into the compiled template. 
 ```
-Reference the template in js(dom logic).
+compiledTemp({
+    name : 'Akho',
+}); 
+``` 
+use .innerHTML to send the data to html. 
+``` element.innerHTML = <YOUR template with data> ``` 
+
+```   
+
 
 Get html text using .innerHTHL.
 Create the variable of your compiled template.
-Inject data into the template. 
 Use the keys to display. 
 Remember to use the correct keys, that means use the same keys you have used to set data into the compiled template variable. 
 Make sure inside of your template you do not have a code that is commented out or you have the correct syntax.
