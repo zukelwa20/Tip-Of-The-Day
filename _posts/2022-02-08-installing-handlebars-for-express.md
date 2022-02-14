@@ -8,16 +8,20 @@ Install Handlebars
 
 ``` $ npm install express-handlebars ```
 
-Handlebars set-up On app.js or index.js
+Express app set-up On app.js or index.js with handlebars
 
 ``` 
+//importing express-handlebars module
 import { engine } from 'express-handlebars';
+
 
 const app = express();
 
+//Handlebars setup 
 app.engine('handlebars', engine());
 app.set('view engine', 'handlebars');
 app.set('views', './views');
+
 
 app.get('/', (req, res) => {
     res.render('home');
