@@ -24,7 +24,13 @@ app.set('views', './views');
 
 
 app.get('/', (req, res) => {
-    res.render('home');
+var data = {
+    name : 'Zozo'
+    surname : 'Milisa'
+}
+    res.render('home', {
+      data : data;
+    });
 });
 
 app.listen(3000);
@@ -49,3 +55,13 @@ Now create the ``` main ``` layout to wrap up the HTML page which can be reused 
 
 ```
 
+This is how you display your data in the screen. Remember this is the data you have rendered. 
+
+```
+<!DOCTYPE html>
+<html>
+    <body>       
+            {{data.name}} 
+    </body>
+</html>
+```
